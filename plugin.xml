@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-app-checker" version="0.0.1">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-app-checker" version="0.0.2">
 <name>Android App Checker</name>
 <description>Checks whether Android app is enabled or not.</description>
 <license>MIT</license>

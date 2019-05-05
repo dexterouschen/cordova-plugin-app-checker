@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-app-checker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Checks whether Android app is installed and enabled or not on Cordova.",
   "keywords": [
     "ecosystem:cordova",
