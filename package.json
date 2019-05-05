@@ -1,24 +1,27 @@
 {
-  "name": "cordova-plugin-webview-checker",
-  "version": "0.9.2",
-  "description": "Checks whether Android System WebView is installed and enabled or not on Cordova.",
+  "name": "cordova-plugin-app-checker",
+  "version": "0.0.1",
+  "description": "Checks whether Android app is installed and enabled or not on Cordova.",
   "keywords": [
     "ecosystem:cordova",
     "cordova-android"
   ],
   "scripts": {
     "testing:setup": "cordova create playground org.cpcwc.playground Playground && cd ./playground && cordova platform add android && cordova plugin add ..",
-    "testing:reset": "cd ./playground && cordova plugin rm cordova-plugin-webview-checker && cordova plugin add ..",
+    "testing:reset": "cd ./playground && cordova plugin rm cordova-plugin-app-checker && cordova plugin add ..",
     "testing:start": "npm run testing:reset && cd ./playground && cordova run android"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NoNameProvided/cordova-plugin-webview-checker.git"
+    "url": "git+https://github.com/dexterouschen/cordova-plugin-app-checker.git"
   },
-  "author": "Attila Olah <NoNameProvided@users.noreply.github.com>",
+  "contributors": [
+    "Attila Olah <NoNameProvided@users.noreply.github.com>",
+    "Dexter Chen <dexterouschen@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NoNameProvided/cordova-plugin-webview-checker/issues"
+    "url": "https://github.com/dexterouschen/cordova-plugin-app-checker/issues"
   },
-  "homepage": "https://github.com/NoNameProvided/cordova-plugin-webview-checker#readme"
+  "homepage": "https://github.com/dexterouschen/cordova-plugin-app-checker#readme"
 }

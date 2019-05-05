@@ -1,4 +1,4 @@
-package com.nonameprovided.cordova.WebViewChecker;
+package com.dexterouschen.cordova.AppChecker;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -18,7 +18,7 @@ import android.net.Uri;
 /**
 * This class echoes a string called from JavaScript.
 */
-public class WebViewChecker extends CordovaPlugin {
+public class AppChecker extends CordovaPlugin {
 
   @Override
   public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {

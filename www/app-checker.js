@@ -1,12 +1,10 @@
-var packageName = 'com.google.android.webview';
-
 function promisifyCordovaExec(command, params, className) {
   params = params || [];
-  className = className || 'WebViewChecker';
+  className = className || 'AppChecker';
 
   return new Promise(function innerPromise(resolve, reject) {
     var rejecter = function rejecter(error) {
-      console.error('[Android Webview Checker] Error:', error);
+      console.error('[Android App Checker] Error:', error);
       reject(error)
     };
 
@@ -15,29 +13,29 @@ function promisifyCordovaExec(command, params, className) {
 }
 
 /**
- * Check if Android System Webview is enabled or not.
+ * Check if app is enabled or not.
  */
-function isWebViewEnabled() {
+function isAppEnabled(packageName) {
   return promisifyCordovaExec('isAppEnabled', [packageName]);
 }
 
 /**
- * Gets the version of Android System Webview.
+ * Gets the version of app.
  */
-function getWebViewVersion() {
+function getAppVersion(packageName) {
   return promisifyCordovaExec('getAppVersion', [packageName]);
 }
 
 /**
- * Opens the Google Play page of Android System Webview.
+ * Opens the Google Play page of app.
  */
-function openGooglePlayPage() {
+function openGooglePlayPage(packageName) {
   return promisifyCordovaExec('openGooglePlayPage', [packageName]);
 
 }
 
 module.exports = {
-  isWebViewEnabled: isWebViewEnabled,
-  getWebViewVersion: getWebViewVersion,
+  isAppEnabled: isAppEnabled,
+  getAppVersion: getAppVersion,
   openGooglePlayPage: openGooglePlayPage
 }
